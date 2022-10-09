@@ -1,0 +1,23 @@
+.login {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  place-items: center;
+}
+
+.login__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.login_btn {
+  padding: 20px;
+  border-radius: 50px;
+  background: #1CCA5A;
+  color: #ffff;
+  font-weight: 900;
+  margin-top: 5rem;
+  cursor: pointer;
+}
