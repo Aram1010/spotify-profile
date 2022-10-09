@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/Login.css";
+import { login_url } from "../auth/login";
 
 const Login = () => {
   return (
@@ -8,10 +9,9 @@ const Login = () => {
         <img
           src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Green.png"
           alt="spotify_logo"
-          width="300px"
         />
         <button type="button" className="login_btn">
-          LOG IN TO SPOTIFY
+          <a href={login_url}>LOG IN TO SPOTIFY</a>
         </button>
       </div>
     </div>
