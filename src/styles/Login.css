@@ -14,15 +14,21 @@
 
 .login__content img {
   max-width: 300px;
+  margin-bottom: 5rem;
+}
+
+.login__content p {
+  font-size: 1.5rem;
+  font-weight: 800;
 }
 
 .login_btn {
-  padding: 20px;
+  padding: 20px 30px;
   border-radius: 50px;
   background: #1cca5a;
   color: #ffff;
   font-weight: 900;
-  margin-top: 5rem;
+  margin-top: 2rem;
   cursor: pointer;
 }
 

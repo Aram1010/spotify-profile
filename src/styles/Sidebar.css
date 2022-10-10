@@ -1,0 +1,7 @@
+.sidebar {
+    padding: 1rem 0 0 1rem;
+}
+
+.sidebar__content > img {
+    max-width: 150px;
+}

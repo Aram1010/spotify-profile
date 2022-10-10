@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./styles/App.css";
 import Login from "./components/Login";
 import Profile from "./components/Profile";
 import { tokenRes } from "./auth/login";
@@ -30,12 +29,11 @@ const App = () => {
           user: user,
         });
       });
+
     }
   }, []);
 
-  console.log(user);
-
-  return <div className="App">{token ? <Profile /> : <Login />}</div>;
+  return <div className="App">{token ? <Profile spotify={spotify} /> : <Login />}</div>;
 };
 
 export default App;

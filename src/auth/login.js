@@ -5,8 +5,8 @@ const sp_id = "43b86ed4bf52464eb5500532314ac541";
 const scopes = [
   "user-top-read",
   "user-read-recently-played",
-  "user-library-read",
-  "user-read-currently-playing",
+  "playlist-read-private",
+  "playlist-read-collaborative",
   "user-follow-read",
 ];
 
