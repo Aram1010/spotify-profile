@@ -8,11 +8,8 @@ import Artist from "../pages/Artist";
 import Tracks from "../pages/Tracks.js";
 import Recent from "../pages/Recent";
 import Playlist from "../pages/Playlist";
-import { Data_layer_value } from "../helper/DataLayer";
 
 const Profile = () => {
-  const [{ user, children }, dispatch] = Data_layer_value();
-
   return (
     <div className="profile">
       <BrowserRouter>
@@ -25,7 +22,7 @@ const Profile = () => {
             <Route path="/playlists" element={<Playlist />} />
           </Routes>
         </Sidebar>
-        <Content children={children} />
+        <Content/>
       </BrowserRouter>
     </div>
   );

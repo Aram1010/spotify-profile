@@ -29,6 +29,27 @@ const App = () => {
           user: user,
         });
       });
+
+      spotify.getFollowedArtists().then((followed) => {
+        dispatch({
+          type: "SET_FOLLOWED",
+          followed: followed,
+        });
+      });
+
+      spotify.getUserPlaylists().then((playlist) => {
+        dispatch({
+          type: "SET_PLAYLIST",
+          playlist: playlist,
+        });
+      });
+
+      spotify.getMyTopArtists().then((artist) => {
+        dispatch({
+          type: "SET_ARTIST",
+          artist: artist,
+        });
+      });
     }
   }, []);
 

@@ -1,9 +1,16 @@
 .sidebar {
-  padding: 1rem 0 0 1rem;
   min-width: 300px;
 }
 
-.sidebar > img {
+.sidebar__test {
+  position: fixed;
+  min-width: 300px;
+  height: 100%;
+  background: #121212;
+  padding: 1rem 0 0 1rem;
+}
+
+.sidebar img {
   max-width: 150px;
 }
 

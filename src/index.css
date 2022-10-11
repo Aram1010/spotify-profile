@@ -5,16 +5,16 @@
 }
 
 @font-face {
-    font-family: "GothamMedium";
-    src: local("GothamMedium"), url(./assets/fonts/Gotham-Black.otf) format("opentype");
+  font-family: "GothamMedium";
+  src: local("GothamMedium"),
+    url(./assets/fonts/Gotham-Black.otf) format("opentype");
 }
 
 body {
   margin: 0;
-  background: #121212;
+  background: #181818;
   color: white;
-  font-family: GothamMedium,
-    sans-serif;
+  font-family: GothamMedium, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

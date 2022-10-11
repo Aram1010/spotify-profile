@@ -1,0 +1,62 @@
+.profile__content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile__content > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile__content > p {
+  font-size: 20px;
+  margin-top: 1rem;
+}
+
+.follow_stats {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.follow_stats > p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.discover__top {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  gap: 100px;
+  margin-top: 100px;
+}
+
+.discover__top ul {
+  margin-top: 40px;
+}
+
+.discover__top li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.artists__top li img {
+  width: 60px;
+  border-radius: 50px;
+}
+
+.discover__top li p {
+  margin-left: 20px;
+}
+
+.playlists__top img {
+  width: 60px;
+}
