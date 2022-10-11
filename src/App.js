@@ -29,11 +29,14 @@ const App = () => {
           user: user,
         });
       });
-
     }
   }, []);
 
-  return <div className="App">{token ? <Profile spotify={spotify} /> : <Login />}</div>;
+  return (
+    <div className="App">
+      {token ? <Profile spotify={spotify} /> : <Login />}
+    </div>
+  );
 };
 
 export default App;
