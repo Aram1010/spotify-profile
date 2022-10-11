@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./styles/Profile.css";
 import Sidebar from "./Sidebar";
 import Content from "./Content";
@@ -8,8 +8,11 @@ import Artist from "../pages/Artist";
 import Tracks from "../pages/Tracks.js";
 import Recent from "../pages/Recent";
 import Playlist from "../pages/Playlist";
+import { Data_layer_value } from "../helper/DataLayer";
 
 const Profile = () => {
+  const [{ user, children }, dispatch] = Data_layer_value();
+
   return (
     <div className="profile">
       <BrowserRouter>
@@ -22,8 +25,8 @@ const Profile = () => {
             <Route path="/playlists" element={<Playlist />} />
           </Routes>
         </Sidebar>
+        <Content children={children} />
       </BrowserRouter>
-      <Content />
     </div>
   );
 };
