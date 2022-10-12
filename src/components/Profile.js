@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import "./styles/Profile.css";
-import Sidebar from "./Sidebar";
+import Sidebar from "./sidebar/Sidebar";
 import Content from "./Content";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Profilepage from "../pages/Profilepage";
-import Artist from "../pages/Artist";
-import Tracks from "../pages/Tracks.js";
-import Recent from "../pages/Recent";
-import Playlist from "../pages/Playlist";
+import Profilepage from "../pages/Profilepage/Profilepage";
+import Artist from "../pages/Artistpage/Artist";
+import Tracks from "../pages/Trackspage/Tracks.js";
+import Recent from "../pages/Recentpage/Recent";
+import Playlist from "../pages/Playlistpage/Playlist";
 
 const Profile = () => {
   return (
@@ -22,7 +22,7 @@ const Profile = () => {
             <Route path="/playlists" element={<Playlist />} />
           </Routes>
         </Sidebar>
-        <Content/>
+        <Content />
       </BrowserRouter>
     </div>
   );

@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import "./styles/Sidebar.css";
+import "./Sidebar.css";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import HeadphonesIcon from "@mui/icons-material/Headphones";
 import GraphicEqIcon from "@mui/icons-material/GraphicEq";
 import HistoryIcon from "@mui/icons-material/History";
 import LibraryMusicIcon from "@mui/icons-material/LibraryMusic";
-import { Data_layer_value } from "../helper/DataLayer";
+import { Data_layer_value } from "../../helper/DataLayer";
 
 const Sidebar = ({ children }) => {
   const [{ token }, dispatch] = Data_layer_value();
