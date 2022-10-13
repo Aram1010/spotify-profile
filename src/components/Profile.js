@@ -4,7 +4,7 @@ import Sidebar from "./sidebar/Sidebar";
 import Content from "./Content";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Profilepage from "../pages/Profilepage/Profilepage";
-import Artist from "../pages/Artistpage/Artist";
+import Artist from "../pages/Artistpage/Artistpage";
 import Tracks from "../pages/Trackspage/Tracks.js";
 import Recent from "../pages/Recentpage/Recent";
 import Playlist from "../pages/Playlistpage/Playlist";

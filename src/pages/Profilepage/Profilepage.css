@@ -53,6 +53,14 @@
   border-radius: 50px;
 }
 
+.artists__top li {
+  cursor: pointer;
+}
+
+.artists__top li:hover .artist_name {
+  text-decoration: underline;
+}
+
 .discover__top li p {
   margin-left: 20px;
 }

@@ -7,8 +7,6 @@ import Playlists from "../../components/profile/Playlists";
 const Profilepage = () => {
   const [{ user, followed, playlist, artist }, dispatch] = Data_layer_value();
 
-  console.log(playlist);
-
   return (
     <div className="profile_page">
       {user ? (
