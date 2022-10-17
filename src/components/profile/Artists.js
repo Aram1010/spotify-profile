@@ -4,7 +4,12 @@ import { NavLink } from "react-router-dom";
 const Artists = ({ artist }) => {
   return (
     <div className="artists__top">
-      <p>Youre Top Artists</p>
+      <nav>
+        <p>Youre Top Artists</p>
+        <NavLink to={`/artists`} className="see_more" end>
+          See More
+        </NavLink>
+      </nav>
       <ul>
         {artist.items?.map((ar, index) => (
           <NavLink

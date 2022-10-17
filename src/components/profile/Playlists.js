@@ -1,9 +1,15 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-const Playlists = ({playlist}) => {
+const Playlists = ({ playlist }) => {
   return (
     <div className="playlists__top">
-      <p>Youre Top Playlists</p>
+      <nav>
+        <p>Youre Top Playlists</p>
+        <NavLink to={`/playlists`} className="see_more" end>
+          See More
+        </NavLink>
+      </nav>
       <ul>
         {playlist.items?.map((pl, index) => (
           <li key={index}>

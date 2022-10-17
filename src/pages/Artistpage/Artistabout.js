@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import "./Artistpage.css";
+import "./Artist.css";
 
 const Artistabout = () => {
   const location = useLocation();
@@ -20,15 +20,17 @@ const Artistabout = () => {
       </div>
       <div className="other__stats">
         <div className="followers">
-          <p>{artist__info
-            ? artist__info.followers.total.toLocaleString(undefined, {
-                maximumFractionDigits: 2,
-              })
-            : null}</p>
+          <p>
+            {artist__info
+              ? artist__info.followers.total.toLocaleString(undefined, {
+                  maximumFractionDigits: 2,
+                })
+              : null}
+          </p>
           <p>Follwers</p>
         </div>
         <div className="genre">
-        <p>{artist__info ? artist__info.genres[0] : null}</p>
+          <p>{artist__info ? artist__info.genres[0] : null}</p>
           <p>Genres</p>
         </div>
         <div className="popularity">

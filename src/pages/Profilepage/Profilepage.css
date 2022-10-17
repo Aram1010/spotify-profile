@@ -68,3 +68,29 @@
 .playlists__top img {
   width: 60px;
 }
+
+.artists__top nav , .playlists__top nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 300px;
+}
+
+.see_more {
+  color: #ffff;
+  text-decoration: none;
+  padding: 11px 24px;
+  min-width: fit-content;
+  max-height: 37px;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid #ffff;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  transition: all 0.25s cubic-bezier(0.3, 0, 0.4, 1) 0s;
+}
+
+.see_more:hover {
+  background: #ffff;
+  color: #000;
+}
