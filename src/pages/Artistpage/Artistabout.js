@@ -20,15 +20,15 @@ const Artistabout = () => {
       </div>
       <div className="other__stats">
         <div className="followers">
-          {artist__info
+          <p>{artist__info
             ? artist__info.followers.total.toLocaleString(undefined, {
                 maximumFractionDigits: 2,
               })
-            : null}
+            : null}</p>
           <p>Follwers</p>
         </div>
         <div className="genre">
-          {artist__info ? artist__info.genres[0] : null}
+        <p>{artist__info ? artist__info.genres[0] : null}</p>
           <p>Genres</p>
         </div>
         <div className="popularity">
