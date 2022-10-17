@@ -2,16 +2,16 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Artists = ({ artist }) => {
-
   return (
     <div className="artists__top">
       <p>Youre Top Artists</p>
       <ul>
         {artist.items?.map((ar, index) => (
           <NavLink
-            to={"/artists"}
+            to={`/artists/${ar.id}`}
             key={index}
             className="link"
+            state={ar}
             end
           >
             <li key={index}>

@@ -1,0 +1,33 @@
+.artist__time {
+  display: flex;
+}
+
+.artist_about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+.artist__default {
+    margin: 1rem;
+}
+
+.artist__default p {
+    font-size: 27px;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.other__stats {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 400px;
+    max-width: 400px;
+}
+
+.artist__default img {
+  width: 270px;
+  border-radius: 50%;
+}

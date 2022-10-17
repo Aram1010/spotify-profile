@@ -8,6 +8,7 @@ import Artist from "../pages/Artistpage/Artistpage";
 import Tracks from "../pages/Trackspage/Tracks.js";
 import Recent from "../pages/Recentpage/Recent";
 import Playlist from "../pages/Playlistpage/Playlist";
+import Artistabout from "../pages/Artistpage/Artistabout";
 
 const Profile = () => {
   return (
@@ -17,6 +18,7 @@ const Profile = () => {
           <Routes>
             <Route path="/" element={<Profilepage />} />
             <Route path="/artists" element={<Artist />} />
+            <Route path="/artists/:id" element={<Artistabout />} />
             <Route path="/tracks" element={<Tracks />} />
             <Route path="/recent" element={<Recent />} />
             <Route path="/playlists" element={<Playlist />} />
