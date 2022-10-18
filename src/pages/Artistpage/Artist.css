@@ -74,7 +74,7 @@
   color: #ffff;
 }
 
-.artists ul li > img {
+.artists ul li img {
   border-radius: 50%;
   width: 200px;
 }

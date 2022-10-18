@@ -12,14 +12,14 @@ const Artists = ({ artist }) => {
       </nav>
       <ul>
         {artist.items?.map((ar, index) => (
-          <NavLink
-            to={`/artists/${ar.id}`}
-            key={index}
-            className="link"
-            state={ar}
-            end
-          >
-            <li key={index}>
+          <li key={index}>
+            <NavLink
+              to={`/artists/${ar.id}`}
+              key={index}
+              className="link"
+              state={ar}
+              end
+            >
               <img
                 src={
                   ar.images
@@ -29,8 +29,8 @@ const Artists = ({ artist }) => {
                 alt="artist_img"
               />
               <p className="artist_name">{ar.name}</p>
-            </li>
-          </NavLink>
+            </NavLink>
+          </li>
         ))}
       </ul>
     </div>

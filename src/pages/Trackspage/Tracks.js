@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Data_layer_value } from "../../helper/DataLayer";
+import "./Tracks.css";
 
 const Tracks = () => {
   const [{ tracks }, dispatch] = Data_layer_value();
@@ -12,14 +13,14 @@ const Tracks = () => {
       <h2>Top Tracks</h2>
       <ul>
         {tracks.items?.map((track, index) => (
-          <NavLink
-            to={`/tracks/${track.id}`}
-            key={index}
-            className="link_track"
-            state={track}
-            end
-          >
-            <li key={index}>
+          <li key={index}>
+            <NavLink
+              to={`/tracks/${track.id}`}
+              key={index}
+              className="link_track"
+              state={track}
+              end
+            >
               <img
                 src={
                   track.album
@@ -28,9 +29,32 @@ const Tracks = () => {
                 }
                 alt="track_img"
               />
-              <p className="artist_name">{track.name}</p>
-            </li>
-          </NavLink>
+              <div className="track__info">
+                <span className="track_name">
+                  <p>{track.name}</p>
+                  <ul className="track__artrists">
+                    {track.artists?.map((arts, ind) => (
+                      <li key={ind}>
+                        {(ind ? ", " : "") + arts.name}
+                      </li>
+                    ))}
+                  </ul>
+                </span>
+                <span className="track__duration">
+                  <span>
+                    {track
+                      ? `${Math.floor(
+                          track.duration_ms / 1000 / 60
+                        )} : ${Math.round(
+                          track.duration_ms / 1000 -
+                            Math.floor(track.duration_ms / 1000 / 60) * 60
+                        )}`
+                      : null}
+                  </span>
+                </span>
+              </div>
+            </NavLink>
+          </li>
         ))}
       </ul>
     </div>

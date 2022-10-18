@@ -1,0 +1,39 @@
+.tracks {
+  padding: 20px;
+}
+.tracks h2 {
+  margin-bottom: 30px;
+}
+
+.tracks li {
+  list-style: none;
+}
+
+.tracks li img {
+  width: 50px;
+}
+
+.link_track {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #ffff;
+}
+
+.track__info {
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.track__artrists {
+    display: flex;
+    color: #9D9D9D;
+    font-size: 13px;
+}
+
+.track__artrists li {
+    
+}
