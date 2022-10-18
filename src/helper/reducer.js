@@ -7,6 +7,7 @@ export const initialState = {
   children: [],
   followed: null,
   artist: [],
+  tracks: null,
 };
 
 export const reducer = (state, action) => {
@@ -40,6 +41,11 @@ export const reducer = (state, action) => {
       return {
         ...state,
         artist: action.artist,
+      };
+    case "SET_TRACKS":
+      return {
+        ...state,
+        tracks: action.tracks,
       };
     default:
       return state;

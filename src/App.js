@@ -50,6 +50,13 @@ const App = () => {
           artist: artist,
         });
       });
+
+      spotify.getMyTopTracks().then((tracks) => {
+        dispatch({
+          type: "SET_TRACKS",
+          tracks: tracks,
+        });
+      });
     }
   }, []);
 
