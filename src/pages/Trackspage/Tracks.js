@@ -6,8 +6,6 @@ import "./Tracks.css";
 const Tracks = () => {
   const [{ tracks }, dispatch] = Data_layer_value();
 
-  console.log(tracks);
-
   return (
     <div className="tracks">
       <h2>Top Tracks</h2>
@@ -36,7 +34,7 @@ const Tracks = () => {
                     {track.artists?.map((arts, ind) => (
                       <li key={ind}>{(ind ? ", " : "") + arts.name}</li>
                     ))}
-                    <span numberOfLines={1}>
+                    <span>
                       {" "}
                       •{" "}
                       {track.album.name.length < 35

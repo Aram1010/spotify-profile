@@ -57,6 +57,13 @@ const App = () => {
           tracks: tracks,
         });
       });
+
+      spotify.getMyRecentlyPlayedTracks().then((recent) => {
+        dispatch({
+          type: "SET_RECENT",
+          recent: recent,
+        });
+      });
     }
   }, []);
 

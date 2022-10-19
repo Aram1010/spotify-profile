@@ -10,6 +10,7 @@ import Recent from "../pages/Recentpage/Recent";
 import Playlist from "../pages/Playlistpage/Playlist";
 import Artistabout from "../pages/Artistpage/Artistabout";
 import Trackabout from "../pages/Trackspage/Trackabout";
+import Recentpage from "../pages/Recentpage/Recentpage";
 
 const Profile = () => {
   return (
@@ -23,6 +24,7 @@ const Profile = () => {
             <Route path="/tracks/:id" element={<Trackabout />} />
             <Route path="/tracks" element={<Tracks />} />
             <Route path="/recent" element={<Recent />} />
+            <Route path="/recent/:id" element={<Recentpage />} />
             <Route path="/playlists" element={<Playlist />} />
           </Routes>
         </Sidebar>

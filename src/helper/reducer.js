@@ -7,6 +7,7 @@ export const initialState = {
   followed: null,
   artist: [],
   tracks: null,
+  recent: null,
 };
 
 export const reducer = (state, action) => {
@@ -45,6 +46,11 @@ export const reducer = (state, action) => {
       return {
         ...state,
         tracks: action.tracks,
+      };
+    case "SET_RECENT":
+      return {
+        ...state,
+        recent: action.recent,
       };
     default:
       return state;
