@@ -13,7 +13,7 @@ const rec = () => {
         {recent.items?.map((rec, index) => (
           <li key={index}>
             <NavLink
-              to={`/rec/${rec.track.id}`}
+              to={`/recent/${rec.track.id}`}
               key={index}
               className="link_recent"
               state={rec}

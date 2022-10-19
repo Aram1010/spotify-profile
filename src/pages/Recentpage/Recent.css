@@ -42,46 +42,46 @@
   margin-left: 10px;
 }
 
-.recent ul > li:hover .recent_name p {
+.recents ul > li:hover .recent_name p {
   text-decoration: underline;
 }
 
-.track__about {
+.recent__about {
   padding: 20px;
 }
 
-.track__about nav {
+.recent__about nav {
   display: flex;
 }
 
-.track__about img {
+.recent__about img {
   width: 200px;
 }
 
-.track_info {
+.recent_info {
   margin-left: 10px;
 }
 
-.track_info p {
+.recent_info p {
   font-size: 25px;
 }
 
-.track_info ul {
+.recent_info ul {
   margin: 10px 0;
 }
 
-.track_info ul,
-.track_info > span {
+.recent_info ul,
+.recent_info > span {
   display: flex;
   color: #9d9d9d;
   font-size: 17px;
 }
 
-.track_info > span {
+.recent_info > span {
   font-size: 13px !important;
 }
 
-.track_info button {
+.recent_info button {
   background-color: #1db954;
   font-weight: 800;
   font-size: 12px;
@@ -97,10 +97,10 @@
   transition: all 0.25s cubic-bezier(0.3, 0, 0.4, 1) 0s;
 }
 
-.track_info a {
+.recent_info a {
   text-decoration: none;
 }
 
-.track_info a button:hover {
+.recent_info a button:hover {
   background: #000;
 }
