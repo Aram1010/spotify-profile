@@ -1,0 +1,27 @@
+.playlists {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  padding: 20px;
+}
+
+.playlists ul {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 50px;
+  list-style: none;
+}
+
+.playlists ul li img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.playlists li p {
+  text-align: center;
+  margin-top: 5px;
+}

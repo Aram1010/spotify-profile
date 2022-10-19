@@ -37,10 +37,10 @@ const App = () => {
         });
       });
 
-      spotify.getUserPlaylists().then((playlist) => {
+      spotify.getUserPlaylists().then((playlists) => {
         dispatch({
           type: "SET_PLAYLIST",
-          playlist: playlist,
+          playlists: playlists,
         });
       });
 

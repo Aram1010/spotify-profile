@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Playlists = ({ playlist }) => {
+const Playlists = ({ playlists }) => {
   return (
     <div className="playlists__top">
       <nav>
@@ -11,7 +11,7 @@ const Playlists = ({ playlist }) => {
         </NavLink>
       </nav>
       <ul>
-        {playlist.items?.map((pl, index) => (
+        {playlists.items?.map((pl, index) => (
           <li key={index}>
             <img
               src={

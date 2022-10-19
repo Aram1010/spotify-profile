@@ -5,7 +5,7 @@ import Artists from "../../components/profile/Artists";
 import Playlists from "../../components/profile/Playlists";
 
 const Profilepage = () => {
-  const [{ user, followed, playlist, artist }, dispatch] = Data_layer_value();
+  const [{ user, followed, playlists, artist }, dispatch] = Data_layer_value();
 
   return (
     <div className="profile_page">
@@ -30,13 +30,13 @@ const Profilepage = () => {
               <span>following</span>
             </p>
             <p>
-              <span>{playlist ? playlist.total : null}</span>
+              <span>{playlists ? playlists.total : null}</span>
               <span>playlists</span>
             </p>
           </div>
           <div className="discover__top">
             <Artists artist={artist} />
-            <Playlists playlist={playlist} />
+            <Playlists playlists={playlists} />
           </div>
         </div>
       ) : null}
