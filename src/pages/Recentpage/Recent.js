@@ -6,6 +6,12 @@ import "./Recent.css";
 const rec = () => {
   const [{ recent }, dispatch] = Data_layer_value();
 
+  function addZero(num) {
+    let number = (num < 10 ? "0" : "") + num;
+
+    return number;
+  }
+
   return (
     <div className="recents">
       <h2>Recently Played Tracks</h2>
@@ -46,12 +52,26 @@ const rec = () => {
                 <span className="recent__duration">
                   <span>
                     {rec.track
-                      ? `${Math.floor(
-                          rec.track.duration_ms / 1000 / 60
-                        )} : ${Math.round(
-                          rec.track.duration_ms / 1000 -
-                            Math.floor(rec.track.duration_ms / 1000 / 60) * 60
-                        )}`
+                      ? `${
+                          rec.track.duration_ms / 1000 / 60 < 10
+                            ? Math.floor(rec.track.duration_ms / 1000 / 60)
+                            : Math.floor(rec.track.duration_ms / 1000 / 60)
+                        }
+                        :
+                          ${
+                            rec.track.duration_ms / 1000 / 60 < 10
+                              ? addZero(
+                                  Math.round(
+                                    rec.track.duration_ms / 1000 -
+                                      Math.floor(
+                                        rec.track.duration_ms / 1000 / 60
+                                      ) *
+                                        60
+                                  )
+                                )
+                              : Math.floor(rec.track.duration_ms / 1000 / 60) *
+                                60
+                          }`
                       : null}
                   </span>
                 </span>

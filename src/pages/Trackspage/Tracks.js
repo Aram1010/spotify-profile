@@ -6,6 +6,12 @@ import "./Tracks.css";
 const Tracks = () => {
   const [{ tracks }, dispatch] = Data_layer_value();
 
+  function addZero(num) {
+    let number = (num < 10 ? "0" : "") + num;
+
+    return number;
+  }
+
   return (
     <div className="tracks">
       <h2>Top Tracks</h2>
@@ -46,12 +52,23 @@ const Tracks = () => {
                 <span className="track__duration">
                   <span>
                     {track
-                      ? `${Math.floor(
-                          track.duration_ms / 1000 / 60
-                        )} : ${Math.round(
-                          track.duration_ms / 1000 -
-                            Math.floor(track.duration_ms / 1000 / 60) * 60
-                        )}`
+                      ? `${
+                          track.duration_ms / 1000 / 60 < 10
+                            ? Math.floor(track.duration_ms / 1000 / 60)
+                            : Math.floor(track.duration_ms / 1000 / 60)
+                        }
+                      :
+                        ${
+                          track.duration_ms / 1000 / 60 < 10
+                            ? addZero(
+                                Math.round(
+                                  track.duration_ms / 1000 -
+                                    Math.floor(track.duration_ms / 1000 / 60) *
+                                      60
+                                )
+                              )
+                            : Math.floor(track.duration_ms / 1000 / 60) * 60
+                        }`
                       : null}
                   </span>
                 </span>

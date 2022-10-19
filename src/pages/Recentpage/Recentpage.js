@@ -8,7 +8,7 @@ const Recentpage = () => {
 
   useEffect(() => {
     setRecent(location.state.track);
-    console.log(recent)
+    console.log(recent);
   }, [location]);
 
   return (
@@ -24,7 +24,7 @@ const Recentpage = () => {
             alt="recent_image"
           />
           <div className="recent_info">
-            <p>{recent ?recent.name : null}</p>
+            <p>{recent ? recent.name : null}</p>
             <ul>
               {recent
                 ? recent.artists?.map((arts, ind) => (
