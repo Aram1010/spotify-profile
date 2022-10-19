@@ -49,8 +49,10 @@
 }
 
 .artists__top li img {
-  width: 60px;
   border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
 }
 
 .artists__top li {

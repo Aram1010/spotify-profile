@@ -26,14 +26,81 @@
   margin-left: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .track__artrists {
-    display: flex;
-    color: #9D9D9D;
-    font-size: 13px;
+  display: flex;
+  color: #9d9d9d;
+  font-size: 13px;
 }
 
-.track__artrists li {
-    
+.track__duration {
+  min-width: fit-content;
+  color: #9d9d9d;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.tracks ul > li:hover .track_name p {
+  text-decoration: underline;
+}
+
+.track__about {
+  padding: 20px;
+}
+
+.track__about nav {
+  display: flex;
+}
+
+.track__about img {
+  width: 200px;
+}
+
+.track_info {
+  margin-left: 10px;
+}
+
+.track_info p {
+  font-size: 25px;
+}
+
+.track_info ul {
+  margin: 10px 0;
+}
+
+.track_info ul,
+.track_info > span {
+  display: flex;
+  color: #9d9d9d;
+  font-size: 17px;
+}
+
+.track_info > span {
+  font-size: 13px !important;
+}
+
+.track_info button {
+  background-color: #1db954;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  padding: 11px 24px;
+  margin: 20px 0px;
+  border: none;
+  cursor: pointer;
+  color: #ffff;
+  border: 1px solid #1db954;
+  transition: all 0.25s cubic-bezier(0.3, 0, 0.4, 1) 0s;
+}
+
+.track_info a {
+  text-decoration: none;
+}
+
+.track_info a button:hover {
+  background: #000;
 }

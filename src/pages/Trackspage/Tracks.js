@@ -34,10 +34,15 @@ const Tracks = () => {
                   <p>{track.name}</p>
                   <ul className="track__artrists">
                     {track.artists?.map((arts, ind) => (
-                      <li key={ind}>
-                        {(ind ? ", " : "") + arts.name}
-                      </li>
+                      <li key={ind}>{(ind ? ", " : "") + arts.name}</li>
                     ))}
+                    <span numberOfLines={1}>
+                      {" "}
+                      •{" "}
+                      {track.album.name.length < 35
+                        ? track.album.name
+                        : `${track.album.name.substring(0, 25)}...`}
+                    </span>
                   </ul>
                 </span>
                 <span className="track__duration">
